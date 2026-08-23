@@ -201,6 +201,23 @@ input[type=range]{accent-color:var(--glow)}
 .player-volume{display:flex;align-items:center;gap:9px}.player-volume input{width:120px}
 .toast{position:fixed;right:24px;bottom:calc(var(--player) + 22px);z-index:100;background:#15241d;color:#eaffdf;border:1px solid rgba(217,255,143,.2);padding:11px 15px;border-radius:12px;font-size:12px;box-shadow:var(--shadow);opacity:0;transform:translateY(8px);pointer-events:none;transition:.25s}
 .toast.show{opacity:1;transform:none}
+.release-manager{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(290px,.55fr);gap:20px;align-items:start}
+.release-editor,.release-library-panel{border:1px solid var(--line);border-radius:22px;background:rgba(9,18,24,.72);padding:22px;box-shadow:var(--shadow)}
+.release-panel-title{align-items:flex-start}.release-panel-title h2{margin:0;font:500 24px/1.1 Manrope,sans-serif}
+.release-form-grid{display:grid;grid-template-columns:minmax(210px,300px) minmax(0,1fr);gap:24px}
+.cover-column{min-width:0}.cover-picker{display:block;cursor:pointer;outline:none}.cover-picker:focus-visible .cover-preview{box-shadow:0 0 0 2px var(--glow)}
+.cover-preview{aspect-ratio:1;display:grid;place-items:center;border:1px dashed var(--line-strong);border-radius:18px;background:radial-gradient(circle at 68% 28%,rgba(217,255,143,.14),transparent 15%),linear-gradient(145deg,#102129,#050a0e);background-size:cover;background-position:center;overflow:hidden;color:#788b83;text-align:center;font-size:12px;padding:16px}
+.cover-preview.has-image span{display:none}.cover-actions{display:flex;gap:8px;margin-top:10px}.field-help{font-size:10px;line-height:1.5;color:#70847b;margin:10px 0 0}
+.release-fields{display:flex;flex-direction:column;gap:14px}.release-fields label{display:flex;flex-direction:column;gap:7px;font-size:11px;color:#8fa198}.field-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.release-fields input,.release-fields select,.release-fields textarea{width:100%;border:1px solid var(--line);background:#091218;color:var(--text);padding:11px 12px;border-radius:10px;outline:none}.release-fields textarea{resize:vertical;min-height:110px}.release-fields input:focus,.release-fields select:focus,.release-fields textarea:focus{border-color:var(--line-strong);box-shadow:0 0 0 2px rgba(217,255,143,.05)}
+.release-track-import{margin-top:28px}.release-tracks-head{align-items:center}.release-drop{border:1px dashed rgba(217,255,143,.23);border-radius:14px;padding:22px;text-align:center;background:rgba(217,255,143,.025);display:flex;flex-direction:column;gap:6px;color:#9eb0a7;cursor:pointer}.release-drop.drag{background:rgba(217,255,143,.08);border-color:var(--glow)}.release-drop span{font-size:10px;color:#71847c}
+.release-track-list{display:flex;flex-direction:column;gap:8px;margin-top:12px}.release-track-empty{padding:18px;border:1px solid var(--line);border-radius:12px;color:#71847c;font-size:11px;text-align:center}
+.release-track-row{display:grid;grid-template-columns:34px minmax(0,1fr) 90px auto;gap:10px;align-items:center;border:1px solid var(--line);border-radius:12px;padding:9px;background:rgba(255,255,255,.015)}.track-index{width:27px;height:27px;border-radius:8px;background:rgba(217,255,143,.07);display:grid;place-items:center;font:10px ui-monospace,monospace;color:#aabbb3}.release-track-meta{min-width:0}.release-track-meta input{width:100%;border:0;border-bottom:1px solid transparent;background:transparent;color:var(--text);padding:5px 3px;outline:none;font-size:12px}.release-track-meta input:focus{border-bottom-color:var(--line-strong)}.release-track-meta small{display:block;color:#71847c;padding:2px 3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.release-track-duration{font:10px ui-monospace,monospace;color:#8da097;text-align:right}.release-track-buttons{display:flex;gap:5px}.release-track-buttons button{width:30px;height:30px;border-radius:8px;border:1px solid var(--line);background:transparent;color:#aab9b2;cursor:pointer}.release-track-buttons button:hover{border-color:var(--line-strong);color:var(--text)}
+.release-savebar{margin-top:22px;padding-top:18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:15px}.save-state{font-size:10px;color:#74877f}.release-actions{display:flex;gap:8px;flex-wrap:wrap}
+.library-explainer{font-size:11px;line-height:1.6;color:#7f9389;margin:0 0 14px}.local-release-list{display:flex;flex-direction:column;gap:10px}.local-release-card{display:grid;grid-template-columns:62px minmax(0,1fr);gap:11px;padding:10px;border:1px solid var(--line);border-radius:13px;background:rgba(255,255,255,.015)}.local-release-cover{width:62px;aspect-ratio:1;border-radius:10px;background:linear-gradient(145deg,#17322c,#080e13);background-size:cover;background-position:center}.local-release-info{min-width:0}.local-release-info strong{font-size:12px;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.local-release-info small{font-size:9px;color:#788b82}.local-release-actions{display:flex;gap:5px;flex-wrap:wrap;margin-top:8px}.local-release-actions .btn{padding:6px 8px;font-size:9px}.publication-note{margin-top:18px}.storage-meter{margin:0 0 14px;padding:9px 10px;border:1px solid var(--line);border-radius:10px;font-size:10px;color:#8da097;background:rgba(217,255,143,.025)}
+.metadata-auto-note{border:1px solid rgba(217,255,143,.16);background:rgba(217,255,143,.035);border-radius:12px;padding:12px 13px;color:#8fa39a;font-size:10px;line-height:1.6}.metadata-auto-note strong{display:block;color:#d7e7df;font-size:11px;margin-bottom:3px}.tag-badge{display:inline-flex;align-items:center;gap:4px;margin-left:6px;padding:2px 6px;border-radius:999px;border:1px solid rgba(217,255,143,.14);background:rgba(217,255,143,.035);color:#9daf9f;font-size:8px;vertical-align:middle}.tag-badge.native{color:#d8efc5;border-color:rgba(217,255,143,.25)}
+.album-open{margin-top:7px;border:0;background:none;color:#aebdb6;padding:0;font-size:10px;cursor:pointer}.album-open:hover{color:var(--text)}
+.album-dialog{width:min(920px,calc(100vw - 32px));max-height:88vh;border:1px solid var(--line-strong);border-radius:24px;padding:0;background:#081118;color:var(--text);box-shadow:0 40px 110px rgba(0,0,0,.62)}.album-dialog::backdrop{background:rgba(0,0,0,.72);backdrop-filter:blur(5px)}.dialog-close{position:absolute;right:14px;top:14px;z-index:2;width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:rgba(7,15,20,.78);color:var(--text);font-size:22px;cursor:pointer}.album-detail{display:grid;grid-template-columns:minmax(250px,.7fr) 1.3fr;gap:30px;padding:30px}.album-detail-cover{aspect-ratio:1;border-radius:18px;border:1px solid var(--line);background:linear-gradient(145deg,#17322c,#080e13);background-size:cover;background-position:center}.album-detail h2{font:500 36px/1.05 Manrope,sans-serif;margin:4px 0 8px}.album-detail-copy{color:#91a49a;font-size:12px;line-height:1.7}.album-detail-tracks{margin-top:22px;border-top:1px solid var(--line)}.album-detail-track{display:grid;grid-template-columns:28px minmax(0,1fr) 60px 34px;gap:8px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line)}.album-detail-track span,.album-detail-track small{font-size:11px}.album-detail-track small{color:#7c9086}.album-detail-track button{border:0;background:none;color:var(--text);cursor:pointer}
 @keyframes pulse{50%{transform:scale(1.15);box-shadow:0 0 20px #f1ffbd,0 0 75px rgba(217,255,143,.95),0 0 210px rgba(126,255,153,.2)}}
 @keyframes blink{0%,100%{opacity:.35}50%{opacity:1}}
 @keyframes slowspin{to{transform:rotate(360deg)}}
@@ -208,6 +225,7 @@ input[type=range]{accent-color:var(--glow)}
 @keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
 @media(max-width:1180px){
   .album-grid.large{grid-template-columns:repeat(3,1fr)}
+  .release-manager{grid-template-columns:1fr}.release-form-grid{grid-template-columns:minmax(180px,260px) 1fr}.release-library-panel{order:2}.album-detail{grid-template-columns:1fr}.album-detail-cover{max-width:420px;width:100%;margin:auto}.studio-shell{width:100%;min-width:0}.arranger{overflow:hidden}.timeline-wrap{overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}.mixer{-webkit-overflow-scrolling:touch}
   .studio-shell{grid-template-columns:210px minmax(470px,1fr)}
   .inspector{grid-column:1/-1;border-left:0;border-top:1px solid var(--line)}
   .inspector-controls{display:grid;grid-template-columns:repeat(4,1fr)}
@@ -239,6 +257,7 @@ input[type=range]{accent-color:var(--glow)}
   .pub-track{grid-template-columns:48px 1fr 50px 35px}.pub-track .album-col{display:none}
 }
 @media(max-width:560px){
+  :root{--player:72px}.view{padding-top:76px}.page-intro{padding:2vh 0 28px}.page-intro h1{font-size:17vw;line-height:.9}.catalogue-head .btn{width:100%}.release-editor,.release-library-panel{padding:14px;border-radius:16px}.release-form-grid{grid-template-columns:1fr}.cover-column{max-width:280px;width:100%;margin:auto}.field-row{grid-template-columns:1fr}.release-track-row{grid-template-columns:28px minmax(0,1fr) auto}.release-track-duration{display:none}.release-track-buttons{grid-column:2/-1;justify-content:flex-end}.release-savebar{align-items:stretch;flex-direction:column}.release-actions{display:grid;grid-template-columns:1fr 1fr}.release-actions .btn{min-height:44px}.release-fields input,.release-fields select,.release-fields textarea{font-size:16px}.release-track-meta input{font-size:16px}.cover-preview{max-width:min(78vw,280px);margin:auto}.release-track-row{min-width:0}.release-track-meta{overflow:hidden}.local-release-card{grid-template-columns:54px minmax(0,1fr)}.local-release-cover{width:54px}.studio-topbar h1{font-size:42px;line-height:.96;letter-spacing:.04em}.studio-actions{display:grid;grid-template-columns:1fr 1fr}.studio-actions .btn{min-height:44px;width:100%}.transport{overflow-x:auto;-webkit-overflow-scrolling:touch;white-space:nowrap}.timeline-wrap{height:430px}.timeline-ruler{height:32px}.track-row{height:72px}.clip{height:56px}.wave-canvas{height:38px}.album-dialog{width:calc(100vw - 12px);max-height:94vh;border-radius:18px}.album-detail{padding:18px;gap:18px}.album-detail h2{font-size:28px}.album-detail-track{grid-template-columns:24px minmax(0,1fr) 32px}.album-detail-track small{display:none}.player{padding-left:8px;padding-right:8px;padding-bottom:max(8px,env(safe-area-inset-bottom))}.pub-track{gap:8px;padding-left:0;padding-right:0}
   .album-grid,.album-grid.large,.project-grid{grid-template-columns:1fr}
   .portal-card,.page-intro.split{align-items:flex-start;flex-direction:column}
   .hero h1{font-size:23vw}
@@ -247,7 +266,6 @@ input[type=range]{accent-color:var(--glow)}
   .inspector-controls{grid-template-columns:1fr}
   .fragments-grid{grid-template-columns:1fr}.fragment.wide{grid-column:auto}.fragment.tall{grid-row:span 1}
 }
-
   </style>
 </head>
 <body>
@@ -265,6 +283,7 @@ input[type=range]{accent-color:var(--glow)}
       <a href="#accueil" data-route="accueil" class="active">Accueil</a>
       <a href="#musique" data-route="musique">Musique</a>
       <a href="#albums" data-route="albums">Albums</a>
+      <a href="#catalogue" data-route="catalogue">Gérer la musique</a>
 
       <p class="nav-label">Créer</p>
       <a href="#studio" data-route="studio">Studio</a>
@@ -332,7 +351,7 @@ input[type=range]{accent-color:var(--glow)}
       <div class="page-intro">
         <p class="eyebrow">Écouter</p>
         <h1>Musique</h1>
-        <p>Tous les morceaux publiés par Luciol, regroupés au même endroit.</p>
+        <p>Tous les morceaux publiés ou ajoutés à ta bibliothèque Luciol, regroupés au même endroit.</p>
       </div>
       <div id="tracksList" class="track-list"></div>
     </section>
@@ -341,7 +360,7 @@ input[type=range]{accent-color:var(--glow)}
       <div class="page-intro">
         <p class="eyebrow">Discographie</p>
         <h1>Albums</h1>
-        <p>Albums, EP, singles, démos et archives.</p>
+        <p>Albums, EP, singles, démos et archives. Les sorties ajoutées depuis cet appareil apparaissent ici avec leur vraie pochette et leurs fichiers audio.</p>
       </div>
       <div class="filter-row" id="albumFilters">
         <button class="chip active" data-filter="all">Tout</button>
@@ -352,6 +371,115 @@ input[type=range]{accent-color:var(--glow)}
         <button class="chip" data-filter="archive">Archives</button>
       </div>
       <div id="albumsGrid" class="album-grid large"></div>
+    </section>
+
+    <section class="view" data-view="catalogue">
+      <div class="page-intro split catalogue-head">
+        <div>
+          <p class="eyebrow">Discographie</p>
+          <h1>Gérer la musique</h1>
+          <p>Crée de vrais albums, ajoute une pochette et importe les fichiers audio. Les ajouts sont enregistrés sur cet appareil et apparaissent immédiatement dans la discographie locale.</p>
+        </div>
+        <button class="btn primary" id="newReleaseBtn" type="button">Nouvelle sortie</button>
+      </div>
+
+      <div class="release-manager">
+        <section class="release-editor">
+          <div class="panel-title release-panel-title">
+            <div>
+              <p class="eyebrow">Éditeur</p>
+              <h2 id="releaseEditorTitle">Nouvelle sortie</h2>
+            </div>
+            <span class="badge">Local</span>
+          </div>
+
+          <div class="release-form-grid">
+            <div class="cover-column">
+              <label class="cover-picker" id="coverPicker" tabindex="0">
+                <input id="releaseCoverInput" type="file" accept="image/jpeg,image/png,image/webp" hidden>
+                <span id="coverPreview" class="cover-preview"><span>Ajouter une pochette</span></span>
+              </label>
+              <div class="cover-actions">
+                <button class="btn tiny ghost" id="chooseCoverBtn" type="button">Choisir</button>
+                <button class="btn tiny ghost" id="removeCoverBtn" type="button">Retirer</button>
+              </div>
+              <p class="field-help">JPG, PNG ou WEBP. La pochette est conservée dans IndexedDB sur cet appareil.</p>
+            </div>
+
+            <div class="release-fields">
+              <label>Titre
+                <input id="releaseTitle" type="text" placeholder="Titre de l'album ou du single">
+              </label>
+              <div class="field-row">
+                <label>Type
+                  <select id="releaseType">
+                    <option value="album">Album</option>
+                    <option value="ep">EP</option>
+                    <option value="single">Single</option>
+                    <option value="demo">Démo</option>
+                    <option value="archive">Archive</option>
+                  </select>
+                </label>
+                <label>Année
+                  <input id="releaseYear" type="number" min="1900" max="2100" value="2026">
+                </label>
+              </div>
+              <div class="field-row">
+                <label>Artiste
+                  <input id="releaseArtist" type="text" value="Luciol" readonly>
+                </label>
+                <label>Genre
+                  <input id="releaseGenre" type="text" placeholder="Alternative, ambient, pop…">
+                </label>
+              </div>
+              <label>Copyright
+                <input id="releaseCopyright" type="text" value="© Luciol" placeholder="© Luciol">
+              </label>
+              <label>Description
+                <textarea id="releaseDescription" rows="5" placeholder="Quelques lignes sur cette sortie, son contexte ou son univers."></textarea>
+              </label>
+              <div class="metadata-auto-note">
+                <strong>Métadonnées automatiques</strong>
+                À l'enregistrement, Luciol recalcule les tags selon le titre de la sortie, l'ordre des pistes, l'année, le genre et la pochette. Les MP3 reçoivent des tags ID3 avec pochette et les WAV des métadonnées RIFF/INFO avec un bloc ID3 pour la pochette. Les autres formats conservent ces métadonnées dans la bibliothèque Luciol et dans le pack exporté.
+              </div>
+            </div>
+          </div>
+
+          <div class="release-track-import">
+            <div class="section-head compact release-tracks-head">
+              <div><p class="eyebrow">Audio</p><h2>Pistes</h2></div>
+              <button class="btn ghost" id="addReleaseTracksBtn" type="button">Ajouter des morceaux</button>
+            </div>
+            <input id="releaseTracksInput" type="file" multiple hidden accept="audio/*,.wav,.mp3,.ogg,.flac,.m4a,.aac">
+            <div id="releaseTracksDrop" class="release-drop" tabindex="0">
+              <strong>Dépose les morceaux ici</strong>
+              <span>WAV, MP3, OGG, FLAC, M4A ou AAC</span>
+            </div>
+            <div id="releaseTrackList" class="release-track-list"></div>
+          </div>
+
+          <div class="release-savebar">
+            <div class="save-state" id="releaseSaveState">Aucune modification enregistrée.</div>
+            <div class="release-actions">
+              <button class="btn ghost" id="resetReleaseBtn" type="button">Réinitialiser</button>
+              <button class="btn primary" id="saveReleaseBtn" type="button">Enregistrer la sortie</button>
+            </div>
+          </div>
+        </section>
+
+        <aside class="release-library-panel">
+          <div class="panel-title release-panel-title">
+            <div><p class="eyebrow">Bibliothèque</p><h2>Mes sorties locales</h2></div>
+          </div>
+          <p class="library-explainer">Ces sorties sont réellement stockées avec leur pochette et leurs fichiers audio dans le navigateur. Elles sont visibles dans Musique et Albums sur cet appareil.</p><div id="releaseStorageMeter" class="storage-meter">Calcul du stockage local…</div>
+          <div id="localReleaseList" class="local-release-list"></div>
+        </aside>
+      </div>
+
+      <div class="privacy-note publication-note">
+        <span class="status-dot"></span>
+        <span>La bibliothèque locale n'est pas automatiquement envoyée sur GitHub. Le bouton « Exporter le pack » crée une archive prête à conserver ou à publier plus tard.</span>
+      </div>
     </section>
 
     <section class="view studio-view" data-view="studio">
@@ -534,10 +662,14 @@ input[type=range]{accent-color:var(--glow)}
     <audio id="publicAudio" preload="metadata"></audio>
   </footer>
 
+  <dialog id="albumDialog" class="album-dialog">
+    <button id="albumDialogClose" class="dialog-close" type="button" aria-label="Fermer">×</button>
+    <div id="albumDialogBody"></div>
+  </dialog>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
   <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
-  <script type="module">
+  <script>
 const $ = (s, r=document) => r.querySelector(s);
 const $$ = (s, r=document) => [...r.querySelectorAll(s)];
 const clamp=(v,a,b)=>Math.min(b,Math.max(a,v));
@@ -549,8 +681,19 @@ const uid=()=>crypto.randomUUID ? crypto.randomUUID() : `${Date.now()}-${Math.ra
 const dbToGain=db=>Math.pow(10,db/20);
 const gainToDb=g=>20*Math.log10(Math.max(g,.0001));
 
-const EMBEDDED_ALBUMS = [{"id":"clairieres-nocturnes","title":"Clairières nocturnes","type":"album","typeLabel":"Album","year":2026,"cover":"assets/albums/clairieres-nocturnes/cover.webp","description":"Emplacement de démonstration pour un futur album.","tracks":[{"title":"Lueur I","artist":"Luciol","src":"assets/albums/clairieres-nocturnes/01-lueur-i.mp3","duration":"--:--"},{"title":"Sous les branches","artist":"Luciol","src":"assets/albums/clairieres-nocturnes/02-sous-les-branches.mp3","duration":"--:--"},{"title":"Après minuit","artist":"Luciol","src":"assets/albums/clairieres-nocturnes/03-apres-minuit.mp3","duration":"--:--"}]},{"id":"lucioles","title":"Lucioles","type":"ep","typeLabel":"EP","year":2026,"cover":"assets/albums/lucioles/cover.webp","description":"Emplacement de démonstration pour un futur EP.","tracks":[{"title":"Premier signal","artist":"Luciol","src":"assets/albums/lucioles/01-premier-signal.mp3","duration":"--:--"},{"title":"Écho vert","artist":"Luciol","src":"assets/albums/lucioles/02-echo-vert.mp3","duration":"--:--"}]},{"id":"fragment-01","title":"Fragment 01","type":"single","typeLabel":"Single","year":2026,"cover":"assets/albums/fragment-01/cover.webp","description":"Emplacement de démonstration pour un single.","tracks":[{"title":"Fragment 01","artist":"Luciol","src":"assets/albums/fragment-01/fragment-01.mp3","duration":"--:--"}]}];
+const STATIC_ALBUMS=[];
 let albums=[];
+const RELEASE_STORE='releases';
+const releaseObjectUrls=new Map();
+let localReleaseRecords=[];
+let editingRelease=null;
+let coverPreviewUrl='';
+function clearReleaseUrls(){for(const u of releaseObjectUrls.values())URL.revokeObjectURL(u);releaseObjectUrls.clear()}
+function typeLabel(type){return ({album:'Album',ep:'EP',single:'Single',demo:'Démo',archive:'Archive'})[type]||'Sortie'}
+function objectUrlFor(key,blob){if(!blob)return'';if(releaseObjectUrls.has(key))return releaseObjectUrls.get(key);const u=URL.createObjectURL(blob);releaseObjectUrls.set(key,u);return u}
+function runtimeRelease(r){
+  return {...r,local:true,typeLabel:typeLabel(r.type),cover:r.coverBlob?objectUrlFor(`cover:${r.id}`,r.coverBlob):'',tracks:(r.tracks||[]).map((t,i)=>({...t,artist:t.artist||'Luciol',src:t.blob?objectUrlFor(`track:${r.id}:${t.id}`,t.blob):'',duration:t.duration?fmt(t.duration):'--:--',trackNo:i+1}))};
+}
 let publicQueue=[];
 let publicIndex=-1;
 let project={id:uid(),name:'Sans titre',createdAt:Date.now(),updatedAt:Date.now(),tracks:[]};
@@ -575,6 +718,7 @@ function route(){
   $('#sidebar').classList.remove('open');
   if(name==='projets') renderProjects();
   if(name==='studio') renderStudio();
+  if(name==='catalogue') renderReleaseManager();
 }
 addEventListener('hashchange',route);
 $('#menuOpen').onclick=()=>$('#sidebar').classList.add('open');
@@ -583,31 +727,34 @@ $('#themeBtn').onclick=()=>{document.body.classList.toggle('soft-night');localSt
 if(localStorage.getItem('luciol-night')==='soft')document.body.classList.add('soft-night');
 
 async function loadAlbums(){
-  albums=EMBEDDED_ALBUMS.map(a=>({...a,tracks:(a.tracks||[]).map(t=>({...t}))}));
+  clearReleaseUrls();
+  try{localReleaseRecords=await dbAllStore(RELEASE_STORE)}catch{localReleaseRecords=[]}
+  const local=localReleaseRecords.sort((a,b)=>(b.year||0)-(a.year||0)||b.updatedAt-a.updatedAt).map(runtimeRelease);
+  albums=[...local,...STATIC_ALBUMS];
   publicQueue=albums.flatMap(a=>(a.tracks||[]).map((t,i)=>({...t,album:a.title,albumId:a.id,cover:a.cover||'',trackNo:i+1})));
-  renderAlbums();
+  renderAlbums();renderLocalReleaseList();
 }
 function coverHTML(a){
-  const cover=a.cover ? `<img src="${a.cover}" alt="Pochette de ${escapeHtml(a.title)}" onerror="this.remove()">` : '';
+  const cover=a.cover ? `<img src="${a.cover}" alt="Pochette de ${escapeHtml(a.title)}">` : '';
   const first=(a.tracks||[])[0];
   return `<article class="album-card" data-type="${a.type||'album'}">
     <div class="album-cover ${a.cover?'':'placeholder'}">${cover}
-      <button class="album-play" data-play-src="${first?.src||''}" data-track-key="${a.id}:0" type="button" aria-label="Lire ${escapeHtml(a.title)}">▶</button>
+      <button class="album-play" data-track-key="${a.id}:0" type="button" aria-label="Lire ${escapeHtml(a.title)}">▶</button>
     </div>
-    <div class="album-info"><strong>${escapeHtml(a.title)}</strong><span>${escapeHtml(a.typeLabel||a.type||'Album')} · ${escapeHtml(String(a.year||''))} · ${(a.tracks||[]).length} morceau${(a.tracks||[]).length>1?'x':''}</span></div>
+    <div class="album-info"><strong>${escapeHtml(a.title)}</strong><span>${escapeHtml(a.typeLabel||typeLabel(a.type))} · ${escapeHtml(String(a.year||''))} · ${(a.tracks||[]).length} morceau${(a.tracks||[]).length>1?'x':''}${a.local?' · local':''}</span><br><button class="album-open" data-open-album="${a.id}" type="button">Voir la sortie →</button></div>
   </article>`;
 }
 function renderAlbums(filter='all'){
   const show=albums.filter(a=>filter==='all'||a.type===filter);
-  $('#albumsGrid').innerHTML=show.map(coverHTML).join('')||'<p class="muted">Aucun album pour le moment.</p>';
-  $('#homeAlbums').innerHTML=albums.slice(0,3).map(coverHTML).join('');
+  $('#albumsGrid').innerHTML=show.map(coverHTML).join('')||'<div class="portal-card"><div><h2>Aucune sortie pour le moment</h2><p>Ajoute un album, un EP ou un single depuis « Gérer la musique ».</p></div><a class="btn primary" href="#catalogue">Ajouter de la musique</a></div>';
+  $('#homeAlbums').innerHTML=albums.slice(0,3).map(coverHTML).join('')||'<div class="portal-card"><div><h2>La discographie attend sa première lumière</h2><p>Ajoute ta première sortie avec sa pochette et ses fichiers audio.</p></div><a class="btn primary" href="#catalogue">Créer une sortie</a></div>';
   $('#tracksList').innerHTML=publicQueue.map((t,i)=>`<div class="pub-track">
     <div class="pub-track-cover" style="${t.cover?`background-image:url('${t.cover}')`:''}"></div>
     <div><strong>${escapeHtml(t.title)}</strong><br><small>${escapeHtml(t.artist||'Luciol')}</small></div>
     <div class="album-col"><small>${escapeHtml(t.album)}</small></div>
     <div class="duration">${t.duration||'--:--'}</div>
     <button class="plain-btn" data-public-index="${i}" type="button">▶</button>
-  </div>`).join('')||'<p>Aucun morceau publié.</p>';
+  </div>`).join('')||'<div class="portal-card"><div><h2>Aucun morceau</h2><p>Ta bibliothèque audio est vide sur cet appareil.</p></div><a class="btn primary" href="#catalogue">Ajouter des morceaux</a></div>';
 }
 $('#albumFilters').addEventListener('click',e=>{
   const b=e.target.closest('[data-filter]'); if(!b)return;
@@ -620,11 +767,18 @@ document.addEventListener('click',e=>{
     const [aid,si]=c.dataset.trackKey.split(':'); const idx=publicQueue.findIndex(t=>t.albumId===aid&&t.trackNo===Number(si)+1);
     if(idx>=0)playPublic(idx);
   }
+  const o=e.target.closest('[data-open-album]');if(o)openAlbum(o.dataset.openAlbum);
 });
+function openAlbum(id){
+  const a=albums.find(x=>x.id===id);if(!a)return;const tracks=(a.tracks||[]).map((t,i)=>{const qi=publicQueue.findIndex(q=>q.albumId===a.id&&q.trackNo===i+1);return `<div class="album-detail-track"><span>${String(i+1).padStart(2,'0')}</span><strong>${escapeHtml(t.title)}</strong><small>${t.duration||'--:--'}</small><button type="button" data-public-index="${qi}">▶</button></div>`}).join('');
+  $('#albumDialogBody').innerHTML=`<div class="album-detail"><div class="album-detail-cover" style="${a.cover?`background-image:url('${a.cover}')`:''}"></div><div><p class="eyebrow">${escapeHtml(a.typeLabel||typeLabel(a.type))} · ${escapeHtml(String(a.year||''))}${a.local?' · local':''}</p><h2>${escapeHtml(a.title)}</h2><p class="album-detail-copy">${escapeHtml(a.description||'')}</p><div class="album-detail-tracks">${tracks||'<p class="album-detail-copy">Aucun morceau.</p>'}</div></div></div>`;
+  const d=$('#albumDialog');if(d.showModal)d.showModal();else d.setAttribute('open','');
+}
+$('#albumDialogClose').onclick=()=>$('#albumDialog').close?.();$('#albumDialog').addEventListener('click',e=>{if(e.target===$('#albumDialog'))$('#albumDialog').close?.()});
 function playPublic(i){
   if(i<0||i>=publicQueue.length)return;
   const t=publicQueue[i]; const a=$('#publicAudio');
-  if(!t.src){toast('Ajoute le fichier audio dans assets/albums puis renseigne son chemin dans data/albums.json.');return}
+  if(!t.src){toast('Le fichier audio de ce morceau est indisponible.');return}
   publicIndex=i;a.src=t.src;a.play().catch(()=>toast('Impossible de lire ce fichier audio.'));
   $('#playerTitle').textContent=t.title;$('#playerAlbum').textContent=t.album;
   $('#playerCover').style.backgroundImage=t.cover?`url('${t.cover}')`:'';
@@ -636,8 +790,8 @@ $('#pubPlay').onclick=()=>{
   if(a.paused){a.play();$('#pubPlay').textContent='Ⅱ';document.body.classList.add('music-alive')}
   else{a.pause();$('#pubPlay').textContent='▶';document.body.classList.remove('music-alive')}
 };
-$('#pubPrev').onclick=()=>playPublic((publicIndex-1+publicQueue.length)%publicQueue.length);
-$('#pubNext').onclick=()=>playPublic((publicIndex+1)%publicQueue.length);
+$('#pubPrev').onclick=()=>{if(publicQueue.length)playPublic((publicIndex-1+publicQueue.length)%publicQueue.length)};
+$('#pubNext').onclick=()=>{if(publicQueue.length)playPublic((publicIndex+1)%publicQueue.length)};
 $('#pubVolume').oninput=e=>$('#publicAudio').volume=Number(e.target.value);
 $('#publicAudio').ontimeupdate=e=>{
   const a=e.target; $('#pubCurrent').textContent=fmt(a.currentTime);$('#pubDuration').textContent=fmt(a.duration||0);
@@ -880,11 +1034,71 @@ function safeName(s){return String(s||'luciol').normalize('NFD').replace(/[\u030
 function extensionOf(s=''){const m=s.match(/(\.[a-z0-9]+)$/i);return m?m[1]:'.wav'}
 
 const DB='luciol-studio',STORE='projects';
-function openDB(){return new Promise((res,rej)=>{const q=indexedDB.open(DB,1);q.onupgradeneeded=()=>q.result.createObjectStore(STORE,{keyPath:'id'});q.onsuccess=()=>res(q.result);q.onerror=()=>rej(q.error)})}
-async function dbPut(p){const db=await openDB();return new Promise((res,rej)=>{const tx=db.transaction(STORE,'readwrite');tx.objectStore(STORE).put(p);tx.oncomplete=()=>res();tx.onerror=()=>rej(tx.error)})}
-async function dbGet(id){const db=await openDB();return new Promise((res,rej)=>{const q=db.transaction(STORE).objectStore(STORE).get(id);q.onsuccess=()=>res(q.result);q.onerror=()=>rej(q.error)})}
-async function dbAll(){const db=await openDB();return new Promise((res,rej)=>{const q=db.transaction(STORE).objectStore(STORE).getAll();q.onsuccess=()=>res(q.result);q.onerror=()=>rej(q.error)})}
-async function dbDelete(id){const db=await openDB();return new Promise((res,rej)=>{const tx=db.transaction(STORE,'readwrite');tx.objectStore(STORE).delete(id);tx.oncomplete=res;tx.onerror=()=>rej(tx.error)})}
+function openDB(){return new Promise((res,rej)=>{const q=indexedDB.open(DB,2);q.onupgradeneeded=()=>{const db=q.result;if(!db.objectStoreNames.contains(STORE))db.createObjectStore(STORE,{keyPath:'id'});if(!db.objectStoreNames.contains(RELEASE_STORE))db.createObjectStore(RELEASE_STORE,{keyPath:'id'})};q.onsuccess=()=>res(q.result);q.onerror=()=>rej(q.error)})}
+async function dbPutStore(store,value){const db=await openDB();return new Promise((res,rej)=>{const tx=db.transaction(store,'readwrite');tx.objectStore(store).put(value);tx.oncomplete=()=>res();tx.onerror=()=>rej(tx.error)})}
+async function dbGetStore(store,id){const db=await openDB();return new Promise((res,rej)=>{const q=db.transaction(store).objectStore(store).get(id);q.onsuccess=()=>res(q.result);q.onerror=()=>rej(q.error)})}
+async function dbAllStore(store){const db=await openDB();return new Promise((res,rej)=>{const q=db.transaction(store).objectStore(store).getAll();q.onsuccess=()=>res(q.result);q.onerror=()=>rej(q.error)})}
+async function dbDeleteStore(store,id){const db=await openDB();return new Promise((res,rej)=>{const tx=db.transaction(store,'readwrite');tx.objectStore(store).delete(id);tx.oncomplete=res;tx.onerror=()=>rej(tx.error)})}
+const dbPut=p=>dbPutStore(STORE,p),dbGet=id=>dbGetStore(STORE,id),dbAll=()=>dbAllStore(STORE),dbDelete=id=>dbDeleteStore(STORE,id);
+function blankRelease(){return {id:uid(),title:'',type:'album',year:new Date().getFullYear(),artist:'Luciol',genre:'',copyright:'© Luciol',description:'',coverBlob:null,coverName:'',tracks:[],createdAt:Date.now(),updatedAt:Date.now()}}
+function cloneRelease(r){return {...r,tracks:(r.tracks||[]).map(t=>({...t}))}}
+function releaseFormDirty(){if($('#releaseSaveState'))$('#releaseSaveState').textContent='Modifications non enregistrées.'}
+function resetReleaseForm(record=null){
+  editingRelease=record?cloneRelease(record):blankRelease();
+  $('#releaseEditorTitle').textContent=record?'Modifier la sortie':'Nouvelle sortie';
+  $('#releaseTitle').value=editingRelease.title||'';$('#releaseType').value=editingRelease.type||'album';$('#releaseYear').value=editingRelease.year||new Date().getFullYear();$('#releaseArtist').value='Luciol';$('#releaseGenre').value=editingRelease.genre||'';$('#releaseCopyright').value=editingRelease.copyright||'© Luciol';$('#releaseDescription').value=editingRelease.description||'';
+  if(coverPreviewUrl){URL.revokeObjectURL(coverPreviewUrl);coverPreviewUrl=''}
+  const cp=$('#coverPreview');cp.style.backgroundImage='';cp.classList.remove('has-image');cp.innerHTML='<span>Ajouter une pochette</span>';
+  if(editingRelease.coverBlob){coverPreviewUrl=URL.createObjectURL(editingRelease.coverBlob);cp.style.backgroundImage=`url('${coverPreviewUrl}')`;cp.classList.add('has-image')}
+  renderDraftTracks();$('#releaseSaveState').textContent=record?'Sortie chargée.':'Nouvelle sortie prête.';
+}
+function renderReleaseManager(){if(!editingRelease)resetReleaseForm();renderDraftTracks();renderLocalReleaseList();updateStorageMeter()}
+function renderDraftTracks(){
+  if(!$('#releaseTrackList'))return;const ts=editingRelease?.tracks||[];
+  $('#releaseTrackList').innerHTML=ts.length?ts.map((t,i)=>`<div class="release-track-row" data-draft-track="${t.id}"><span class="track-index">${i+1}</span><div class="release-track-meta"><input type="text" value="${escapeHtml(t.title)}" data-draft-title="${t.id}" aria-label="Titre du morceau"><small>${escapeHtml(t.sourceName||'Fichier audio')} <span class="tag-badge ${/\.(mp3|wav)$/i.test(t.sourceName||'')?'native':''}">${/\.mp3$/i.test(t.sourceName||'')?'ID3':/\.wav$/i.test(t.sourceName||'')?'RIFF + ID3':'Luciol'}</span></small></div><span class="release-track-duration">${fmt(t.duration||0)}</span><div class="release-track-buttons"><button type="button" data-draft-play="${t.id}" title="Écouter">▶</button><button type="button" data-draft-up="${t.id}" title="Monter">↑</button><button type="button" data-draft-down="${t.id}" title="Descendre">↓</button><button type="button" data-draft-remove="${t.id}" title="Supprimer">×</button></div></div>`).join(''):'<div class="release-track-empty">Aucun morceau ajouté.</div>';
+}
+function renderLocalReleaseList(){
+  if(!$('#localReleaseList'))return;
+  $('#localReleaseList').innerHTML=localReleaseRecords.length?localReleaseRecords.map(r=>{const cu=r.coverBlob?objectUrlFor(`manager-cover:${r.id}`,r.coverBlob):'';return `<article class="local-release-card"><div class="local-release-cover" style="${cu?`background-image:url('${cu}')`:''}"></div><div class="local-release-info"><strong>${escapeHtml(r.title)}</strong><small>${typeLabel(r.type)} · ${r.year||''} · ${(r.tracks||[]).length} morceau${(r.tracks||[]).length>1?'x':''}</small><div class="local-release-actions"><button class="btn ghost" type="button" data-edit-release="${r.id}">Modifier</button><button class="btn ghost" type="button" data-export-release="${r.id}">Exporter le pack</button><button class="btn danger" type="button" data-delete-release="${r.id}">Supprimer</button></div></div></article>`}).join(''):'<div class="release-track-empty">Aucune sortie locale. Crée ton premier album, EP ou single.</div>';
+}
+async function audioDuration(file){return new Promise(res=>{const a=document.createElement('audio'),u=URL.createObjectURL(file);a.preload='metadata';a.onloadedmetadata=()=>{const d=Number.isFinite(a.duration)?a.duration:0;URL.revokeObjectURL(u);res(d)};a.onerror=()=>{URL.revokeObjectURL(u);res(0)};a.src=u})}
+async function addReleaseAudio(files){if(!editingRelease)resetReleaseForm();for(const f of [...files]){if(!f.type.startsWith('audio/')&&!/\.(wav|mp3|ogg|flac|m4a|aac)$/i.test(f.name))continue;const d=await audioDuration(f);editingRelease.tracks.push({id:uid(),title:f.name.replace(/\.[^.]+$/,''),artist:'Luciol',sourceName:f.name,type:f.type||'audio/*',blob:f,duration:d,metadata:{artist:'Luciol',album:editingRelease.title||'',year:editingRelease.year||new Date().getFullYear(),genre:editingRelease.genre||'',copyright:editingRelease.copyright||'© Luciol',tagged:false}})}renderDraftTracks();releaseFormDirty()}
+function moveDraft(id,dir){const ts=editingRelease.tracks,i=ts.findIndex(t=>t.id===id),j=i+dir;if(i<0||j<0||j>=ts.length)return;[ts[i],ts[j]]=[ts[j],ts[i]];renderDraftTracks();releaseFormDirty()}
+async function updateStorageMeter(){if(!$('#releaseStorageMeter')||!navigator.storage?.estimate)return;try{const {usage=0,quota=0}=await navigator.storage.estimate(),mb=n=>n/1024/1024;$('#releaseStorageMeter').textContent=`Stockage local : ${mb(usage).toFixed(1)} Mo utilisés sur ${quota?mb(quota).toFixed(0)+' Mo disponibles':'quota navigateur'}.`}catch{}}
+function bytesAscii(text){return new Uint8Array([...text].map(c=>c.charCodeAt(0)&255))}
+function concatBytes(parts){const len=parts.reduce((n,p)=>n+p.length,0),out=new Uint8Array(len);let o=0;for(const p of parts){out.set(p,o);o+=p.length}return out}
+function u32be(n){return new Uint8Array([(n>>>24)&255,(n>>>16)&255,(n>>>8)&255,n&255])}
+function u32le(n){return new Uint8Array([n&255,(n>>>8)&255,(n>>>16)&255,(n>>>24)&255])}
+function synchsafe(n){return new Uint8Array([(n>>>21)&127,(n>>>14)&127,(n>>>7)&127,n&127])}
+function utf16le(text){const out=new Uint8Array(2+text.length*2+2);out[0]=255;out[1]=254;for(let i=0;i<text.length;i++){const c=text.charCodeAt(i);out[2+i*2]=c&255;out[3+i*2]=(c>>>8)&255}return out}
+function id3TextFrame(id,text){if(text===undefined||text===null||String(text)==='')return null;const payload=concatBytes([new Uint8Array([1]),utf16le(String(text))]);return concatBytes([bytesAscii(id),u32be(payload.length),new Uint8Array([0,0]),payload])}
+function id3CommentFrame(text){if(!text)return null;const payload=concatBytes([new Uint8Array([1]),bytesAscii('fra'),utf16le('Luciol'),utf16le(String(text))]);return concatBytes([bytesAscii('COMM'),u32be(payload.length),new Uint8Array([0,0]),payload])}
+async function id3PictureFrame(blob){if(!blob)return null;const image=new Uint8Array(await blob.arrayBuffer()),mime=blob.type||'image/jpeg',payload=concatBytes([new Uint8Array([0]),bytesAscii(mime),new Uint8Array([0,3,0]),image]);return concatBytes([bytesAscii('APIC'),u32be(payload.length),new Uint8Array([0,0]),payload])}
+async function buildId3Tag(meta,coverBlob){const frames=[id3TextFrame('TIT2',meta.title),id3TextFrame('TPE1',meta.artist),id3TextFrame('TPE2',meta.albumArtist||meta.artist),id3TextFrame('TALB',meta.album),id3TextFrame('TRCK',`${meta.track}/${meta.trackTotal}`),id3TextFrame('TYER',meta.year),id3TextFrame('TCON',meta.genre),id3TextFrame('TCOP',meta.copyright),id3CommentFrame(meta.comment)];const pic=await id3PictureFrame(coverBlob);if(pic)frames.push(pic);const body=concatBytes(frames.filter(Boolean));return concatBytes([bytesAscii('ID3'),new Uint8Array([3,0,0]),synchsafe(body.length),body])}
+function oldId3v2Length(bytes){if(bytes.length<10||bytes[0]!==73||bytes[1]!==68||bytes[2]!==51)return 0;const s=(bytes[6]<<21)|(bytes[7]<<14)|(bytes[8]<<7)|bytes[9];return 10+s}
+async function tagMp3(blob,meta,coverBlob){const bytes=new Uint8Array(await blob.arrayBuffer()),start=oldId3v2Length(bytes),end=bytes.length>=128&&String.fromCharCode(...bytes.slice(bytes.length-128,bytes.length-125))==='TAG'?bytes.length-128:bytes.length,tag=await buildId3Tag(meta,coverBlob);return new Blob([tag,bytes.slice(start,end)],{type:'audio/mpeg'})}
+function wavInfoChunk(meta){const values={INAM:meta.title,IART:meta.artist,IPRD:meta.album,ITRK:`${meta.track}/${meta.trackTotal}`,ICRD:String(meta.year||''),IGNR:meta.genre||'',ICOP:meta.copyright||'',ICMT:meta.comment||''};const chunks=[bytesAscii('INFO')];for(const [id,val] of Object.entries(values)){if(!val)continue;const raw=new TextEncoder().encode(String(val)+'\0'),pad=raw.length%2?new Uint8Array([0]):new Uint8Array(0);chunks.push(bytesAscii(id),u32le(raw.length),raw,pad)}const body=concatBytes(chunks),pad=body.length%2?new Uint8Array([0]):new Uint8Array(0);return concatBytes([bytesAscii('LIST'),u32le(body.length),body,pad])}
+async function tagWav(blob,meta,coverBlob){const src=new Uint8Array(await blob.arrayBuffer());if(src.length<12||String.fromCharCode(...src.slice(0,4))!=='RIFF'||String.fromCharCode(...src.slice(8,12))!=='WAVE')return blob;const kept=[src.slice(12,12)];let o=12;while(o+8<=src.length){const id=String.fromCharCode(...src.slice(o,o+4)),size=src[o+4]|(src[o+5]<<8)|(src[o+6]<<16)|(src[o+7]<<24),end=Math.min(src.length,o+8+size+(size%2));const isInfo=id==='LIST'&&o+12<=src.length&&String.fromCharCode(...src.slice(o+8,o+12))==='INFO';const isId3=id.toLowerCase()==='id3 ';if(!isInfo&&!isId3)kept.push(src.slice(o,end));o=end}const info=wavInfoChunk(meta),id3=await buildId3Tag(meta,coverBlob),id3Pad=id3.length%2?new Uint8Array([0]):new Uint8Array(0),id3Chunk=concatBytes([bytesAscii('id3 '),u32le(id3.length),id3,id3Pad]),body=concatBytes([bytesAscii('WAVE'),...kept.slice(1),info,id3Chunk]),header=concatBytes([bytesAscii('RIFF'),u32le(body.length),body]);return new Blob([header],{type:'audio/wav'})}
+function metadataForTrack(release,track,index){return {title:track.title||`Piste ${index+1}`,artist:'Luciol',albumArtist:'Luciol',album:release.title,track:index+1,trackTotal:release.tracks.length,year:release.year,genre:release.genre||'',copyright:release.copyright||'© Luciol',comment:`${typeLabel(release.type)} - Luciol`}}
+async function applyReleaseMetadata(release){for(let i=0;i<release.tracks.length;i++){const t=release.tracks[i],meta=metadataForTrack(release,t,i),name=t.sourceName||'',original=t.originalBlob||t.blob;t.originalBlob ||= original;try{if(/\.mp3$/i.test(name)||t.type==='audio/mpeg')t.blob=await tagMp3(original,meta,release.coverBlob);else if(/\.wav$/i.test(name)||t.type==='audio/wav'||t.type==='audio/x-wav')t.blob=await tagWav(original,meta,release.coverBlob);t.artist='Luciol';t.metadata={...meta,tagged:/\.(mp3|wav)$/i.test(name),taggedAt:Date.now()}}catch(err){console.warn('Metadata tagging failed',name,err);t.metadata={...meta,tagged:false,error:String(err)}}}return release}
+async function saveRelease(){
+  if(!editingRelease)return;editingRelease.title=$('#releaseTitle').value.trim();editingRelease.type=$('#releaseType').value;editingRelease.year=Number($('#releaseYear').value)||new Date().getFullYear();editingRelease.artist='Luciol';editingRelease.genre=$('#releaseGenre').value.trim();editingRelease.copyright=$('#releaseCopyright').value.trim()||'© Luciol';editingRelease.description=$('#releaseDescription').value.trim();
+  if(!editingRelease.title){toast('Ajoute un titre à la sortie.');$('#releaseTitle').focus();return}if(!editingRelease.tracks.length){toast('Ajoute au moins un morceau.');return}
+  $('#releaseSaveState').textContent='Écriture des métadonnées audio…';await applyReleaseMetadata(editingRelease);editingRelease.updatedAt=Date.now();editingRelease.createdAt ||= Date.now();try{await navigator.storage?.persist?.()}catch{}await dbPutStore(RELEASE_STORE,editingRelease);$('#releaseSaveState').textContent='Sortie enregistrée et métadonnées synchronisées.';toast('Sortie enregistrée avec métadonnées automatiques.');await loadAlbums();updateStorageMeter();resetReleaseForm(editingRelease)
+}
+async function exportReleasePack(id){let r=await dbGetStore(RELEASE_STORE,id);if(!r)return;if(!window.JSZip){toast('JSZip indisponible.');return}toast('Synchronisation des métadonnées…');r=await applyReleaseMetadata(r);await dbPutStore(RELEASE_STORE,r);const z=new JSZip(),folder=safeName(r.title);let coverPath='';if(r.coverBlob){const ext=(r.coverName.match(/\.[a-z0-9]+$/i)||['.webp'])[0];coverPath=`${folder}/cover${ext}`;z.file(coverPath,r.coverBlob)}const meta={id:safeName(r.title),title:r.title,type:r.type,typeLabel:typeLabel(r.type),year:r.year,artist:'Luciol',genre:r.genre||'',copyright:r.copyright||'© Luciol',description:r.description,cover:coverPath?coverPath.split('/').slice(1).join('/'):'',tracks:[]};for(let i=0;i<r.tracks.length;i++){const t=r.tracks[i],ext=extensionOf(t.sourceName)||'.wav',name=`${String(i+1).padStart(2,'0')}-${safeName(t.title)}${ext}`,path=`${folder}/${name}`;z.file(path,t.blob);meta.tracks.push({title:t.title,artist:'Luciol',album:r.title,track:i+1,trackTotal:r.tracks.length,year:r.year,genre:r.genre||'',copyright:r.copyright||'© Luciol',src:name,duration:fmt(t.duration||0),metadataEmbedded:!!t.metadata?.tagged})}z.file(`${folder}/release.json`,JSON.stringify(meta,null,2));const blob=await z.generateAsync({type:'blob',compression:'DEFLATE'});downloadBlob(blob,`${folder}-publication.zip`);toast('Pack de publication exporté.')}
+
+$('#newReleaseBtn').onclick=()=>resetReleaseForm();$('#resetReleaseBtn').onclick=()=>resetReleaseForm(editingRelease?.id&&localReleaseRecords.find(r=>r.id===editingRelease.id)||null);$('#saveReleaseBtn').onclick=saveRelease;
+$('#chooseCoverBtn').onclick=()=>$('#releaseCoverInput').click();$('#coverPicker').addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();$('#releaseCoverInput').click()}});$('#coverPicker').addEventListener('click',e=>{if(e.target.closest('button'))return;$('#releaseCoverInput').click()});
+$('#releaseCoverInput').onchange=e=>{const f=e.target.files[0];if(!f)return;if(!/^image\/(jpeg|png|webp)$/.test(f.type)){toast('Utilise une image JPG, PNG ou WEBP.');return}editingRelease ||= blankRelease();editingRelease.coverBlob=f;editingRelease.coverName=f.name;if(coverPreviewUrl)URL.revokeObjectURL(coverPreviewUrl);coverPreviewUrl=URL.createObjectURL(f);$('#coverPreview').style.backgroundImage=`url('${coverPreviewUrl}')`;$('#coverPreview').classList.add('has-image');releaseFormDirty();e.target.value=''};
+$('#removeCoverBtn').onclick=()=>{if(!editingRelease)return;editingRelease.coverBlob=null;editingRelease.coverName='';if(coverPreviewUrl)URL.revokeObjectURL(coverPreviewUrl);coverPreviewUrl='';$('#coverPreview').style.backgroundImage='';$('#coverPreview').classList.remove('has-image');releaseFormDirty()};
+['#releaseTitle','#releaseType','#releaseYear','#releaseGenre','#releaseCopyright','#releaseDescription'].forEach(sel=>$(sel).addEventListener('input',releaseFormDirty));
+$('#addReleaseTracksBtn').onclick=()=>$('#releaseTracksInput').click();$('#releaseTracksDrop').onclick=()=>$('#releaseTracksInput').click();$('#releaseTracksDrop').addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();$('#releaseTracksInput').click()}});$('#releaseTracksInput').onchange=e=>{addReleaseAudio(e.target.files);e.target.value=''};
+['dragenter','dragover'].forEach(ev=>$('#releaseTracksDrop').addEventListener(ev,e=>{e.preventDefault();$('#releaseTracksDrop').classList.add('drag')}));['dragleave','drop'].forEach(ev=>$('#releaseTracksDrop').addEventListener(ev,e=>{e.preventDefault();$('#releaseTracksDrop').classList.remove('drag')}));$('#releaseTracksDrop').addEventListener('drop',e=>addReleaseAudio(e.dataTransfer.files));
+$('#releaseTrackList').addEventListener('input',e=>{const id=e.target.dataset.draftTitle;if(!id)return;const t=editingRelease.tracks.find(x=>x.id===id);if(t){t.title=e.target.value;releaseFormDirty()}});
+$('#releaseTrackList').addEventListener('click',e=>{const play=e.target.dataset.draftPlay,up=e.target.dataset.draftUp,down=e.target.dataset.draftDown,rem=e.target.dataset.draftRemove;if(play){const t=editingRelease.tracks.find(x=>x.id===play);if(t){const a=$('#publicAudio');a.src=URL.createObjectURL(t.blob);a.play();$('#playerTitle').textContent=t.title;$('#playerAlbum').textContent=editingRelease.title||'Brouillon';$('#pubPlay').textContent='Ⅱ'}}if(up)moveDraft(up,-1);if(down)moveDraft(down,1);if(rem){editingRelease.tracks=editingRelease.tracks.filter(t=>t.id!==rem);renderDraftTracks();releaseFormDirty()}});
+$('#localReleaseList').addEventListener('click',async e=>{const edit=e.target.dataset.editRelease,del=e.target.dataset.deleteRelease,exp=e.target.dataset.exportRelease;if(edit){const r=await dbGetStore(RELEASE_STORE,edit);if(r){resetReleaseForm(r);scrollTo({top:0,behavior:'smooth'})}}if(exp)exportReleasePack(exp);if(del&&confirm('Supprimer cette sortie locale et ses fichiers audio ?')){await dbDeleteStore(RELEASE_STORE,del);if(editingRelease?.id===del)resetReleaseForm();await loadAlbums();updateStorageMeter();toast('Sortie supprimée.')}});
+
 async function saveProject(){
   project.updatedAt=Date.now();if(project.name==='Sans titre'){const n=prompt('Nom du projet',project.name);if(n)project.name=n}
   await dbPut(project);localStorage.setItem('luciol-last-project',project.id);toast('Projet sauvegardé localement.');
@@ -916,11 +1130,10 @@ function fireflies(){
 fireflies();
 
 (async function init(){
-  route();await loadAlbums();renderStudio();
+  resetReleaseForm();route();await loadAlbums();renderStudio();
   const last=localStorage.getItem('luciol-last-project');
   if(last){try{const p=await dbGet(last);if(p){project=p;selectedTrackId=p.tracks[0]?.id||null;renderStudio()}}catch{}}
 })();
-
   </script>
 </body>
 </html>
