@@ -1,0 +1,45 @@
+name: Bootstrap Luciol V1
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  bootstrap:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Rebuild Luciol source package
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat .bootstrap/part*.b64 | base64 --decode > /tmp/luciol-v1.zip
+          rm -rf /tmp/luciol-v1
+          mkdir -p /tmp/luciol-v1
+          unzip -q /tmp/luciol-v1.zip -d /tmp/luciol-v1
+          rsync -a --delete --exclude='.git/' /tmp/luciol-v1/ ./
+          rm -rf .bootstrap
+          rm -f TEST.txt
+          rm -f .github/workflows/bootstrap.yml
+
+      - name: Publish generated source to main
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No source changes to commit."
+          else
+            git commit -m "Publish Luciol V1 source [skip ci]"
+            git push
+          fi
